@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dantv.listadetarefas.MainActivity"
+    android:background="@android:color/background_light">
+
+    <Button
+        android:id="@+id/btnAddId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Adicionar" />
+
+    <EditText
+        android:id="@+id/edTxtId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnAddId"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/btnAddId"
+        android:layout_toStartOf="@+id/btnAddId"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <ListView
+        android:id="@+id/listViweId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edTxtId" />
+</android.widget.RelativeLayout>
